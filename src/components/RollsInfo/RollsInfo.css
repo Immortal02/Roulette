@@ -1,0 +1,68 @@
+.Roulette__info {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__info {
+    align-items: center;
+    justify-content: flex-end;
+    height: 29px;
+  }
+  .Roulette__bets, .Roulette__info {
+    flex-direction: row;
+  }
+}
+
+.Roulette__previous {
+  flex: 1 1;
+  opacity: .8;
+  margin-left: 5px;
+}
+
+.Roulette__previous, .Roulette__previous__field {
+  display: flex;
+  align-items: center;
+}
+
+.Roulette__previous__field-image {
+  height: 24px;
+  width: 24px;
+}
+
+.Roulette__history {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__history {
+    margin: 0;
+  }
+}
+
+.Roulette__history-text {
+  font-weight: 500;
+  font-size: 15px;
+  color: #59679c;
+  margin-right: 5px;
+}
+
+.Roulette__history-numbers {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 240px;
+}
+
+.Roulette__history-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}

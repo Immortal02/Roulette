@@ -1,0 +1,110 @@
+.Roulette__holder {
+  position: relative;
+}
+
+.Roulette_bett_balance {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette_bett_balance {
+    justify-content: center;
+  }
+}
+
+.Roulette_bett_balance-text {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.Roulette_bett_balance-flame {
+  margin-left: 5px;
+}
+
+.Roulette__bett {
+  display: flex;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bett {
+    justify-content: center;
+  }
+}
+
+.Roulette__bett_inside {
+  margin: 10px;
+  background: #0c0f1a;
+  border: 1px solid #1d2134;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bett_inside {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+.Roulette__bett_input {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #1d2134;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bett_input {
+    border-right: 1px solid #1d2134;
+    border-bottom: none;
+  }
+}
+
+.Roulette__bett_input-flame {
+  margin: 12px 5px 12px 10px;
+}
+
+.Roulette__bett_input-field {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #0c0f1a;
+  color: #fff;
+  font-size: 1em;
+}
+
+.Roulette__previous__field-number {
+  font-weight: 600;
+  margin: 0 10px 0 5px;
+}
+
+.Roulette_bet_helpers {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.Roulette_bet_helper {
+  -webkit-appearance: button;
+  cursor: pointer;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8b95c7;
+  background: 0 0;
+  border: none;
+  padding: 0 5px;
+  -webkit-transition: background 175ms,#fff 175ms;
+  transition: background 175ms,#fff 175ms;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette_bet_helper {
+    padding: 0 10px;
+  }
+}

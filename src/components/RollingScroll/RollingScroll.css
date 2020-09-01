@@ -1,0 +1,122 @@
+.Roulette__roller {
+  width: 100%;
+  position: relative;
+  padding: 5px 0;
+  background-color: #0f1322;
+  border: 3px solid #0f1322;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.Roulette__roller-curtain {
+  display: none;
+  z-index: 9;
+  position: absolute;
+  background: rgba(15,19,34,.85);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Roulette__roller-curtain.is--visible {
+  display: block;
+}
+
+.Roulette__roller-curtain_text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  font-size: 21px;
+  font-weight: 500;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  color: white;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__roller-curtain_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color: white;
+  }
+}
+
+.Roulette_indicator {
+  width: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.Roulette_spin-container {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.Roulette_spin-items {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  width: 8450px;
+  -webkit-transform: matrix(1,0,0,1,0,0);
+  transform: matrix(1,0,0,1,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.spin-item {
+  flex: 0 0 auto;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.spin-item span {
+  display: none;
+  font-size: 21px;
+  flex: 0 0 auto;
+  font-weight: 500;
+}
+
+.spin-item.red {
+  background: url(/assets/image/red.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.spin-item.black {
+  background: url(/assets/image/blue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.spin-item.green {
+  background: url(/assets/image/gold.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}

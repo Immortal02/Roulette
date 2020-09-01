@@ -1,0 +1,157 @@
+.Roulette__bets-side {
+  position: relative;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bets-side {
+    flex: 1 1;
+  }
+  .Roulette__bets-side:nth-child(2) {
+    margin: 10px 20px;
+  }
+}
+
+.Roulette__side_button {
+  cursor: pointer;
+  position: relative;
+  height: 3.125rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #272e42;
+  border-width: 1px;
+  border-color: transparent;
+  box-shadow: 0 3px 0 0 #1d2233;
+  border-radius: .4375rem;
+  -webkit-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+.Roulette__side_button--coin {
+  width: 40px;
+  height: 40px;
+  -webkit-filter: drop-shadow(0 2px 3px rgba(0,0,0,.6));
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.6));
+}
+
+.Roulette__side_button--coin.color--blue {
+  background: url(/assets/image/blue.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.Roulette__side_button--coin.color--gold {
+  background: url(/assets/image/gold.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.Roulette__side_button--coin.color--red {
+  background: url(/assets/image/red.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.Roulette__side_button__main {
+  flex: 1 1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.Roulette__side_button__main-text {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  opacity: .9;
+  font-size: 17px;
+}
+
+.Roulette__side_button__main-win {
+  margin-left: auto;
+  opacity: .7;
+}
+
+.Roulette__bets_main {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 2px;
+  font-weight: 500;
+  color: #8b95c7;
+  height: 25px;
+}
+
+.Roulette__bets-divider {
+  background: #1d2134;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.Roulette__bets_collapse {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8b95c7;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bets_collapse {
+    display: none;
+  }
+}
+
+.Roulette__bets-side.is--collapsed>.Roulette__bets_players {
+    display: none;
+}
+
+@media screen and (min-width: 968px) {
+  .Roulette__bets-side.is--collapsed>.Roulette__bets_players {
+    display: block;
+  }
+}
+
+.Roulette__bets_player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  -webkit-transition: opacity .15s ease-in,-webkit-transform .15s ease-in;
+  transition: opacity .15s ease-in,-webkit-transform .15s ease-in;
+  transition: transform .15s ease-in,opacity .15s ease-in;
+  transition: transform .15s ease-in,opacity .15s ease-in,-webkit-transform .15s ease-in;
+}
+
+.Roulette__bets_player-profile {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  color: #8b95c7;
+}
+
+.Roulette__bets_player-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.Roulette__bets_amount {
+  color: #fff;
+  font-weight: 500;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Roulette__bets_svg {
+  margin-left: 5px;
+}
