@@ -1,3 +1,4 @@
+/* eslint-disable inferno/style-prop-object */
 import { Component } from 'inferno';
 import FireImage from '../../assets/Icon/FireImage';
 import './RollBets.css';
@@ -34,8 +35,12 @@ export default class RollBets extends Component {
   }
 
   render() {
+    const { timer } = this.props;
     return (
-      <div class="Roulette__holder">
+      <div class="Roulette__holder" style="position: relative">
+        {
+          (timer > 17000) && <div class="Roulette__holder-curtain" />          
+        }
         <div>
           <div class="Roulette_bett_balance">
             <div class="Roulette_bett_balance-text">Balance:</div>

@@ -57,6 +57,7 @@
   text-align: center;
   overflow: hidden;
   width: 240px;
+  direction: rtl;
 }
 
 .Roulette__history-icon {
